@@ -1,0 +1,172 @@
+/* OpenLayers custom styling ONLY */
+.ol-zoom,
+.ol-full-screen,
+.ol-rotate {
+  top:30px;
+  left: inherit;
+  width:30px;
+  right: 25px;
+}
+.ol-zoom-extent {
+  top: 4.643em;
+  left: .5em;
+}
+.ol-zoom .ol-zoom-in {
+  border-radius: 2px 2px 0 0;
+  width:40px;
+  height:40px;
+  opacity: 1;
+  margin-bottom: 10px;
+  background: #ffffff;
+}
+.ol-zoom .ol-zoom-out {
+  border-radius: 0 0 2px 2px;
+  background: #ffffff;
+  opacity: 1;
+  margin-bottom:10px;
+  width:40px;
+  height:40px;
+}
+.ol-control {
+  border-radius: 0;
+  padding: 0;
+  background: 0;
+}
+
+.ol-control:hover,
+.ol-control:focus {
+  background: inherit;
+}
+
+.ol-control button {
+  background: inherit;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  cursor: inherit;
+  margin: inherit;
+  box-shadow: inherit;
+}
+.ol-control button:hover,
+.ol-control button:focus {
+  background: inherit;
+}
+
+.ol-scale-line {
+  left: inherit;
+  right: 8px;
+}
+
+.ol-attribution li:not(:last-child):after {
+  content: ", ";
+}
+
+.ol-overlaycontainer-stopevent {
+  z-index: inherit !important;
+}
+
+.ol-overlay-container {
+  z-index: 2000 !important;
+}
+/**
+  * 提示框的样式信息
+  */
+.tooltip {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  color: white;
+  padding: 4px 8px;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+.tooltip-measure {
+  opacity: 1;
+  font-weight: bold;
+}
+
+.tooltip-static {
+  background-color: #fd0116;
+  color: black;
+  border: 1px solid white;
+}
+
+.tooltip-measure:before,
+.tooltip-static:before {
+  border-top: 6px solid rgba(0, 0, 0, 0.5);
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  margin-left: -7px;
+  left: 50%;
+}
+
+.tooltip-static:before {
+  border-top-color: #ffffff;
+}
+#info {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  z-index: 100;
+}
+.tooltip.in {
+  opacity: 1;
+}
+.tooltip.top .tooltip-arrow {
+  border-top-color: white;
+}
+.tooltip-inner {
+  border: 2px solid white;
+
+}
+.component{
+  z-index:2;
+}
+#map .ol-custom-overviewmap,
+#map .ol-custom-overviewmap.ol-uncollapsible {
+  bottom: auto;
+  left: auto;
+  right: 70px;
+  top: 30px;
+  background: #fffffe;
+}
+
+#map .ol-custom-overviewmap:not(.ol-collapsed)  {
+  border: 1px solid black;
+  z-index: 2;
+}
+
+#map .ol-custom-overviewmap .ol-overviewmap-map {
+  border: none;
+  width: 300px;
+}
+
+#map .ol-custom-overviewmap .ol-overviewmap-box {
+  border: 2px solid red;
+}
+
+#map .ol-custom-overviewmap:not(.ol-collapsed) button{
+  bottom: auto;
+  left: auto;
+  right: 1px;
+  top: 1px;
+  z-index: 2;
+  background: #61dafb;
+}
+
+#map{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
